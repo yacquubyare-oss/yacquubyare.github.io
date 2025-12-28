@@ -3,53 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yacquubyare | Portfolio</title>
+    <title>Yacquubyare | Professional Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #0f172a; color: white; text-align: center; line-height: 1.6; }
-        header { background: linear-gradient(135deg, #1e293b, #3b82f6); padding: 60px 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
-        .container { padding: 40px 20px; max-width: 800px; margin: auto; }
-        .card { background: #1e293b; padding: 25px; border-radius: 15px; margin-bottom: 25px; text-align: left; border-left: 6px solid #3b82f6; box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
-        h1 { font-size: 2.5rem; margin: 0; text-transform: uppercase; letter-spacing: 2px; }
-        .social-links { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-top: 30px; }
-        .btn { padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; color: white; transition: 0.3s; display: inline-block; min-width: 160px; font-size: 1rem; }
-        
-        .whatsapp { background: #25d366; }
-        .facebook { background: #1877f2; }
-        .instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
-        
-        .btn:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); opacity: 0.9; }
-        footer { margin-top: 50px; padding: 20px; font-size: 0.9rem; color: #94a3b8; }
+        :root {
+            --primary-color: #3b82f6;
+            --secondary-color: #1e293b;
+            --accent-color: #60a5fa;
+            --bg-dark: #020617;
+        }
+
+        body { 
+            font-family: 'Roboto', sans-serif; 
+            margin: 0; 
+            background-color: var(--bg-dark); 
+            color: white; 
+            text-align: center; 
+        }
+
+        header { 
+            background: radial-gradient(circle at center, #1e293b 0%, #020617 100%);
+            padding: 100px 20px; 
+            border-bottom: 2px solid rgba(59, 130, 246, 0.2);
+        }
+
+        /* Farta weyn ee aad dalbatay */
+        h1 { 
+            font-family: 'Poppins', sans-serif;
+            font-size: 4rem; /* Aad u weyn */
+            font-weight: 800;
+            margin: 0; 
+            text-transform: uppercase; 
+            letter-spacing: -2px;
+            background: linear-gradient(to right, #ffffff, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+        }
+
+        p.subtitle {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            letter-spacing: 3px;
+            margin-top: 10px;
+            font-weight: 500;
+        }
+
+        .container { padding: 40px 20px; max-width: 900px; margin: auto; }
+
+        .card { 
+            background: rgba(30, 41, 59, 0.5); 
+            padding: 30px; 
+            border-radius: 20px; 
+            margin-bottom: 30px; 
+            text-align: left; 
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            transition: 0.4s;
+        }
+
+        .card:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-5px);
+        }
+
+        .social-links { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 40px; }
+
+        .btn { 
+            padding: 18px 35px; 
+            border-radius: 12px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            color: white; 
+            transition: 0.3s; 
+            display: inline-block; 
+            min-width: 180px; 
+            font-size: 1.1rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .whatsapp { background: #075e54; border-bottom: 4px solid #043e37; }
+        .facebook { background: #1877f2; border-bottom: 4px solid #0d59bd; }
+        .instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); border-bottom: 4px solid #a11354; }
+
+        .btn:hover { 
+            transform: scale(1.05); 
+            filter: brightness(1.2);
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.4);
+        }
+
+        footer { padding: 40px; color: #475569; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
 <header>
     <h1>YACQUUBYARE</h1>
-    <p>Engineering • Technology • Solutions</p>
+    <p class="subtitle">STRUCTURAL ENGINEER • TECH EXPERT</p>
 </header>
 
 <div class="container">
     <div class="card">
-        <h3>🏗️ Injineernimada & Tiknoolajiyadda</h3>
-        <p>Ku soo dhowow website-kayga rasmiga ah. Waxaan halkan ku soo bandhigaa adeegyada casriga ah ee aan u fidiyo bulshada, laga bilaabo qaabaynta dhismooyinka ilaa xalalka dhijitaalka ah.</p>
+        <h3 style="color: #60a5fa; margin-top: 0;">🏢 Adeegga Injineernimada</h3>
+        <p>Waxaan kuu dhisaynaa mustaqbal adag anagoo isticmaalayna aqoon iyo xirfad casri ah. Waxaan nahay khubaro ku takhasustay naqshadaynta iyo fulinta dhismooyinka.</p>
     </div>
 
-    <h3 style="margin-top: 40px;">Nagala soo xiriir baraha bulshada:</h3>
     <div class="social-links">
-        <a href="https://wa.me/252615822055" class="btn whatsapp" target="_blank">💬 WhatsApp</a>
-        
-        <a href="https://facebook.com/YACQUUBYARE" class="btn facebook" target="_blank">🔵 Facebook</a>
-        
-        <a href="https://instagram.com/YACQUUBYARE" class="btn instagram" target="_blank">📸 Instagram</a>
+        <a href="https://wa.me/252615822055" class="btn whatsapp" target="_blank">💬 WHATSAPP</a>
+        <a href="https://facebook.com/YACQUUBYARE" class="btn facebook" target="_blank">🔵 FACEBOOK</a>
+        <a href="https://instagram.com/YACQUUBYARE" class="btn instagram" target="_blank">📸 INSTAGRAM</a>
     </div>
 </div>
 
 <footer>
-    <p>&copy; 2025 Yacquubyare. All Rights Reserved.</p>
+    <p>&copy; 2025 Yacquubyare Design. All Rights Reserved.</p>
 </footer>
 
 </body>
 </html>
+
 
 
 
