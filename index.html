@@ -17,28 +17,25 @@
 
         header { 
             background: radial-gradient(circle at center, #1e293b 0%, #020617 100%);
-            padding: 60px 10px; 
+            padding: 50px 10px; 
             border-bottom: 2px solid rgba(59, 130, 246, 0.2);
         }
 
-        /* MAGACA OO LA SAXAY SI UU U WADA MUUQDO */
+        /* Magaca oo la saxay si uusan u go'in */
         h1 { 
             font-family: 'Poppins', sans-serif;
-            font-size: 7vw; /* Cabbirka wuxuu raacayaa ballaca shaashadda */
+            font-size: clamp(1.8rem, 8vw, 3rem); /* Wuxuu isku dhuuqayaa hadba baaxadda shaashadda */
             font-weight: 800;
             margin: 0; 
             text-transform: uppercase; 
             background: linear-gradient(to right, #ffffff, #60a5fa);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            display: block;
             width: 100%;
+            display: inline-block;
         }
 
-        /* Taleefannada waaweyn farta ha dhaafin cabbir cayiman */
-        @media (min-width: 600px) { h1 { font-size: 3rem; } }
-
-        p.subtitle { color: #94a3b8; letter-spacing: 2px; margin-top: 10px; font-weight: 500; }
+        p.subtitle { color: #94a3b8; letter-spacing: 2px; margin-top: 10px; font-weight: 500; font-size: 0.9rem; }
 
         .container { padding: 20px 15px; max-width: 800px; margin: auto; }
 
@@ -46,15 +43,16 @@
             background: rgba(30, 41, 59, 0.6); 
             padding: 20px; 
             border-radius: 15px; 
-            margin-bottom: 20px; 
+            margin-bottom: 25px; 
             text-align: left; 
             border: 1px solid rgba(59, 130, 246, 0.3);
+            backdrop-filter: blur(5px);
         }
 
         .social-links { display: flex; flex-direction: column; gap: 15px; align-items: center; }
 
         .btn { 
-            padding: 15px; 
+            padding: 16px; 
             border-radius: 12px; 
             text-decoration: none; 
             font-weight: bold; 
@@ -65,14 +63,18 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
+            transition: 0.3s;
         }
 
         .whatsapp { background: #25d366; }
+        /* Magacyadaada saxda ah ee aad iisoo dirtay */
         .facebook { background: #1877f2; }
         .instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
 
-        footer { padding: 20px; color: #475569; font-size: 0.8rem; }
+        .btn:hover { transform: scale(1.02); filter: brightness(1.1); }
+
+        footer { padding: 30px; color: #475569; font-size: 0.8rem; }
     </style>
 </head>
 <body>
@@ -91,9 +93,9 @@
     <div class="social-links">
         <a href="https://wa.me/252615822055" class="btn whatsapp" target="_blank">💬 WHATSAPP</a>
         
-        <a href="https://facebook.com/MAGACAAGA_FACEBOOK" class="btn facebook" target="_blank">🔵 FACEBOOK</a>
+        <a href="https://www.facebook.com/search/top/?q=Maxamed%20Cabdi%20(asma%20aabeheed)" class="btn facebook" target="_blank">🔵 FACEBOOK</a>
         
-        <a href="https://instagram.com/MAGACAAGA_INSTAGRAM" class="btn instagram" target="_blank">📸 INSTAGRAM</a>
+        <a href="https://instagram.com/yackobali" class="btn instagram" target="_blank">📸 INSTAGRAM</a>
     </div>
 </div>
 
