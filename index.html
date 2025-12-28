@@ -4,89 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yacquubyare | Professional Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --primary-color: #3b82f6;
-            --bg-dark: #020617;
-        }
-
         body { 
             font-family: 'Roboto', sans-serif; 
             margin: 0; 
-            background-color: var(--bg-dark); 
+            background-color: #020617; 
             color: white; 
             text-align: center; 
-            overflow-x: hidden; /* Waxay ka hortagtaa inuu boggu dhinac u dhumo */
+            overflow-x: hidden; 
         }
 
         header { 
             background: radial-gradient(circle at center, #1e293b 0%, #020617 100%);
-            padding: 80px 10px; 
+            padding: 60px 10px; 
             border-bottom: 2px solid rgba(59, 130, 246, 0.2);
         }
 
-        /* Farta la saxay - hadda way wada muuqanaysaa */
+        /* MAGACA OO LA SAXAY SI UU U WADA MUUQDO */
         h1 { 
             font-family: 'Poppins', sans-serif;
-            font-size: 2.8rem; /* Cabbirka waa la yareeyay si uu u wada muuqdo */
-            font-weight: 900;
+            font-size: 7vw; /* Cabbirka wuxuu raacayaa ballaca shaashadda */
+            font-weight: 800;
             margin: 0; 
             text-transform: uppercase; 
-            letter-spacing: 1px;
             background: linear-gradient(to right, #ffffff, #60a5fa);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            word-wrap: break-word; /* Haddii uu weynaado wuu soo laabanyaa */
+            display: block;
+            width: 100%;
         }
 
-        /* Taleefannada aadka u yaryar farta sii yaree */
-        @media (max-width: 400px) {
-            h1 { font-size: 2.2rem; }
-        }
+        /* Taleefannada waaweyn farta ha dhaafin cabbir cayiman */
+        @media (min-width: 600px) { h1 { font-size: 3rem; } }
 
-        p.subtitle {
-            font-size: 1rem;
-            color: #94a3b8;
-            letter-spacing: 2px;
-            margin-top: 15px;
-            font-weight: 500;
-        }
+        p.subtitle { color: #94a3b8; letter-spacing: 2px; margin-top: 10px; font-weight: 500; }
 
-        .container { padding: 30px 15px; max-width: 800px; margin: auto; }
+        .container { padding: 20px 15px; max-width: 800px; margin: auto; }
 
         .card { 
             background: rgba(30, 41, 59, 0.6); 
-            padding: 25px; 
+            padding: 20px; 
             border-radius: 15px; 
-            margin-bottom: 25px; 
+            margin-bottom: 20px; 
             text-align: left; 
             border: 1px solid rgba(59, 130, 246, 0.3);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         }
 
-        .social-links { display: flex; flex-direction: column; gap: 15px; align-items: center; margin-top: 30px; }
+        .social-links { display: flex; flex-direction: column; gap: 15px; align-items: center; }
 
         .btn { 
-            padding: 15px 30px; 
+            padding: 15px; 
             border-radius: 12px; 
             text-decoration: none; 
             font-weight: bold; 
             color: white; 
-            transition: 0.3s; 
-            width: 80%; /* Batoonnada waaweyn */
-            max-width: 300px;
-            font-size: 1.1rem;
-            text-align: center;
+            width: 90%; 
+            max-width: 350px;
+            font-size: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
         }
 
-        .whatsapp { background: #25d366; box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3); }
-        .facebook { background: #1877f2; box-shadow: 0 4px 10px rgba(24, 119, 242, 0.3); }
+        .whatsapp { background: #25d366; }
+        .facebook { background: #1877f2; }
         .instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
 
-        .btn:hover { transform: translateY(-3px); filter: brightness(1.1); }
-
-        footer { padding: 30px; color: #475569; font-size: 0.8rem; }
+        footer { padding: 20px; color: #475569; font-size: 0.8rem; }
     </style>
 </head>
 <body>
@@ -104,8 +90,10 @@
 
     <div class="social-links">
         <a href="https://wa.me/252615822055" class="btn whatsapp" target="_blank">💬 WHATSAPP</a>
-        <a href="https://facebook.com/YACQUUBYARE" class="btn facebook" target="_blank">🔵 FACEBOOK</a>
-        <a href="https://instagram.com/YACQUUBYARE" class="btn instagram" target="_blank">📸 INSTAGRAM</a>
+        
+        <a href="https://facebook.com/MAGACAAGA_FACEBOOK" class="btn facebook" target="_blank">🔵 FACEBOOK</a>
+        
+        <a href="https://instagram.com/MAGACAAGA_INSTAGRAM" class="btn instagram" target="_blank">📸 INSTAGRAM</a>
     </div>
 </div>
 
@@ -115,6 +103,7 @@
 
 </body>
 </html>
+
 
 
 
